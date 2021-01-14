@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+/* home page */
+.circle,
+.circle:hover {
+  width: 270px;
+  height: 100%;
+  border: 1px black solid;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.rowWidth {
+  width: 80%;
+}
+.colHeight {
+  height: 33%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* images for home page */
+.img1 {
+  background-image: url("https://media.giphy.com/media/cfuL5gqFDreXxkWQ4o/giphy.gif");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.img2 {
+  background-image: url("https://media.giphy.com/media/MWSRkVoNaC30A/giphy.gif");
+}
+.img3 {
+  background-image: url("https://media.giphy.com/media/3oEduLSwuxfMoTbMQg/giphy.gif");
+}
+
+/* mobile styling */
+@media only screen and (max-width: 450px) {
+  .mobile {
+    display: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navbar {
+    justify-content: space-around !important;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  /* still need to justify content on mobile */
+}
+
+/* Nav styling */
+.link:hover {
+  background-color: lightcoral;
+  border: 1px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.clicked {
+  background-color: red !important;
 }
